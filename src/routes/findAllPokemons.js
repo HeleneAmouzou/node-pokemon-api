@@ -10,7 +10,7 @@ module.exports = (app) => {
       })
       .catch(error => {
         const message = 'La liste des pokémons n\'as pas pu être récupérée. Veuillez réessayer dans quelques instants.'
-        res.statut(500).json({message, data: error})
+        res.status(500).json({message, data: error})
       })
   })
 }

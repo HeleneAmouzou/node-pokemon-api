@@ -10,7 +10,7 @@ module.exports = (app) => {
       return Pokemon.findByPk(id).then(pokemon => {
         if(pokemon === null) {
           const message = 'Le pokémon demandé n\'existe pas. Veuillez réessayer avec un autre identifiant.'
-          return res.statut(404).json({message, data: error})
+          return res.status(404).json({message, data: error})
         }
         const message = `Le pokémon ${pokemon.name} a bien été modifié.`
         res.json({message, data: pokemon })
@@ -18,7 +18,7 @@ module.exports = (app) => {
     })
     .catch(error => {
       const message = 'La liste des pokémons n\'as pas pu être modifié. Veuillez réessayer dans quelques instants.'
-      res.statut(500).json({message, data: error})
+      res.status(500).json({message, data: error})
     })
   })
 }
