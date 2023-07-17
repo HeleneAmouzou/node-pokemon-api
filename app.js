@@ -12,9 +12,9 @@ app
 
 sequelize.initDb()
 
-app.get('/', (req, res) => {
-    res.json('Hello !')
-})
+// app.get('/', (req, res) => {
+//     res.json('Hello !')
+// })
 
 //Points de terminaison
 require('./src/routes/findAllPokemons')(app)
