@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "engines": {
     "node": "18.16.1",
-    "npm": "9.5.1"
+    "npm": "9.8.0"
   },
   "description": "An API Rest to handle some pokemons.",
   "main": "app.js",
